@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Fundamentals </title>
+    <style>
+        .fa{ float: right;}
+        .fa:hover{font-weight: bold;}
+        .list{
+            font-size: 24px;
+        } 
+        .delete-item:hover{
+          color: darksalmon;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+        <div class="row p-5">
+          <div class="col-md-12">
+            <div id="main" class="card">
+              <div class="card-body">
+                <h2 class="card-title">Task List</h2>
+                <div class="row">
+                 <div class="col-md-12">
+                  <form id="task-form">
+                    <div class="form-group">
+                      <input type="text" name="task" id="task" class="form-control" placeholder="New Task">
+                      
+                    </div>
+                    </div>
+                </div>
+                <input type="submit" value="Add Task" class="btn btn-primary">
+                </form>
+              </div>
+              <hr>
+
+              <div class="card">
+                <h5 id="task-title" class="text-center">Tasks</h5>
+                <ul class="collection">
+                  <!-- <li class="collection-item">
+                    List Item
+                    <a href="#" class="delete-item secondary-content">
+                      <i class="fa fa-minus"></i>
+                    </a>
+                  </li>  -->
+                </ul>
+                <div class="p-2">
+                    <input type="text" class="form-control" id="filter" placeholder="filter Tasks">
+                    <hr>
+                    <a class="clear-tasks btn btn-dark" href="#">Clear Tasks</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
